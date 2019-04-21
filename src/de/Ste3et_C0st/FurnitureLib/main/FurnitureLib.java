@@ -261,7 +261,7 @@ public class FurnitureLib extends JavaPlugin{
 		this.mode = PublicMode.valueOf(getConfig().getString("config.PlaceMode.Mode", "PRIVATE"));
 		this.update = getConfig().getBoolean("config.CheckUpdate");
 		this.updater = new Updater();
-		//this.sync = !getConfig().getBoolean("config.asyncLoading", false);
+		this.sync = !getConfig().getBoolean("config.asyncLoading", false);
 		this.loadIgnore();
 		
 		debug("Config->useGamemode:" + useGamemode);
